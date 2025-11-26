@@ -12,9 +12,10 @@ class FlatsController < ApplicationController
   end
 
   def create
+    @flat = Flat.find(params[:id])
     @flat = Flat.new(flat_params)
     if @flat.save
-      redirect_to @flat, notice: "Flat was successfully created."
+      redirect_to flat_path(@flat), notice: "Flat was successfully created."
     else
       render :new, status: :unprocessable_content
     end

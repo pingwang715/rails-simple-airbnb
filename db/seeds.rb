@@ -17,7 +17,8 @@ Flat.create!(
   address: '10 Clifton Gardens London W9 1DT',
   description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
   price_per_night: 75,
-  number_of_guests: 3
+  number_of_guests: 3,
+  picture_url: "https://unsplash.com/photos/aerial-photography-of-london-skyline-during-daytime-Oja2ty_9ZLM"
 )
 puts "Created light & spacious garden flat london"
 
@@ -27,7 +28,8 @@ Flat.create!(
   address: 'Rindermarkt 16, 80331 München',
   description: 'Impeccable view of the city hall of Munich. One double bedroom, open plan living area, large kitchen and a beautiful conservatory',
   price_per_night: 120,
-  number_of_guests: 2
+  number_of_guests: 2,
+  picture_url: "https://unsplash.com/photos/aerial-photo-of-cityscape-during-nighttime-C6l894Q7wpI"
 )
 puts "Created righ in the old town munich"
 
@@ -37,7 +39,8 @@ Flat.create!(
   address: 'Place Émile Goudeau, 11 Rue Ravignan, 75018 Paris, France',
   description: 'In the chic & Bohemian neighbourhood of Paris. One double bedroom, open plan living area, large kitchen and a beautiful conservatory',
   price_per_night: 95,
-  number_of_guests: 2
+  number_of_guests: 2,
+  picture_url: "https://unsplash.com/photos/bridge-during-night-time-R5scocnOOdM"
 )
 puts "Created chic & bohemian paris"
 
@@ -47,6 +50,7 @@ Flat.create!(
   address: 'Bahnhofpl. 6, 82319 Starnberg',
   description: 'Best for all seasons: a view of the Alps and the Starnberger Sea. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
   price_per_night: 200,
-  number_of_guests: 4
+  number_of_guests: 4,
+  picture_url: "https://unsplash.com/photos/calm-sea-under-blue-sky-during-daytime--5tFROaYDUog"
 )
 puts "Created mountain & sea starnberg"
