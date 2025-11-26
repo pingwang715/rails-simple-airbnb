@@ -1,0 +1,27 @@
+<nav class="navbar bg-body-tertiary mb-3">
+  <div class="container-fluid">
+    <a class="navbar-brand">Simple Airbnb</a>
+    <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-primary"%>
+  </div>
+</nav>
+
+<form>
+  <div>
+    <%= simple_form_for(@flat) do |f| %>
+    <%= f.error_notification %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+    <div class="form-inputs form-control">
+      <%= f.input :name%>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <%= f.input :price_per_night %>
+      <%= f.input :number_of_guests %>
+    </div>
+
+    <div class="form-actions text-center mt-3">
+      <%= f.button :submit, class: "btn btn-success"%>
+    </div>
+    <% end %>
+  </div>
+</form>
